@@ -1,0 +1,12 @@
+//- extends layout 
+//- block content 
+//-     form(action="/hello" method="POST")
+//-         label(for="userName") Please enter a name: 
+//-             input(type="text" name="userName")
+//-         input(type="submit", value="submit")  
+extends app 
+block intro
+    form.namecard-form(action="/hello", method="POST")
+        label.namecard-prompt(for="userName") Please enter your name: 
+            input.namecard-name(type="text", name="userName")
+        button.namecard-submit(type="submit") Submit   

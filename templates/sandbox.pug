@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title SandBox
+    body 
+        header 
+            h1 SandBox 
+        section#content
+            h1 Table in pug
+            table 
+                tbody 
+                    tr 
+                        th First Name 
+                        th Last Name
+                    each item in nameList
+                        tr 
+                            td= item.firstName
+                            td= item.lastName
+        footer 
+            p A place to practice pug
